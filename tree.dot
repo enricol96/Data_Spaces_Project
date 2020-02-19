@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="CGPA <= 0.129\nentropy = 0.981\nsamples = 350\nvalue = [203, 147]\nclass = Not Admitted", fillcolor="#f8dcc8"] ;
+1 [label="CGPA <= -0.534\nentropy = 0.319\nsamples = 190\nvalue = [179, 11]\nclass = Not Admitted", fillcolor="#e78945"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="entropy = 0.0\nsamples = 112\nvalue = [112, 0]\nclass = Not Admitted", fillcolor="#e58139"] ;
+1 -> 2 ;
+3 [label="TOEFL <= -0.101\nentropy = 0.587\nsamples = 78\nvalue = [67, 11]\nclass = Not Admitted", fillcolor="#e9965a"] ;
+1 -> 3 ;
+4 [label="entropy = 0.332\nsamples = 49\nvalue = [46, 3]\nclass = Not Admitted", fillcolor="#e78946"] ;
+3 -> 4 ;
+5 [label="entropy = 0.85\nsamples = 29\nvalue = [21, 8]\nclass = Not Admitted", fillcolor="#efb184"] ;
+3 -> 5 ;
+6 [label="CGPA <= 0.791\nentropy = 0.61\nsamples = 160\nvalue = [24, 136]\nclass = Admitted", fillcolor="#5caeea"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="CGPA <= 0.452\nentropy = 0.894\nsamples = 74\nvalue = [23, 51]\nclass = Admitted", fillcolor="#92c9f1"] ;
+6 -> 7 ;
+8 [label="entropy = 0.982\nsamples = 38\nvalue = [16, 22]\nclass = Admitted", fillcolor="#c9e4f8"] ;
+7 -> 8 ;
+9 [label="entropy = 0.711\nsamples = 36\nvalue = [7, 29]\nclass = Admitted", fillcolor="#69b5eb"] ;
+7 -> 9 ;
+10 [label="GRE <= 0.233\nentropy = 0.091\nsamples = 86\nvalue = [1, 85]\nclass = Admitted", fillcolor="#3b9ee5"] ;
+6 -> 10 ;
+11 [label="entropy = 1.0\nsamples = 2\nvalue = [1, 1]\nclass = Not Admitted", fillcolor="#ffffff"] ;
+10 -> 11 ;
+12 [label="entropy = 0.0\nsamples = 84\nvalue = [0, 84]\nclass = Admitted", fillcolor="#399de5"] ;
+10 -> 12 ;
+}
